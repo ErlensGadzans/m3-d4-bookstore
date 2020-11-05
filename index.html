@@ -36,10 +36,8 @@
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item collapse">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item collapse">
+
+            <li class="nav-item active">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -49,13 +47,14 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Dropdown
+                Price category
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" onclick="lessPrice()">Less than 10$</a>
+                <a class="dropdown-item" onclick="betweenPrice()"
+                  >Between 10$ and 15$</a
+                >
+                <a class="dropdown-item" onclick="morePrice()">More than 15$</a>
               </div>
             </li>
             <li class="nav-item">
