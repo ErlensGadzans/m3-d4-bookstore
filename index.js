@@ -20,7 +20,7 @@ function books (){
                                     <p class="card-text">Price $:
                                     ${elem.price}
                                     </p>
-                                    <a onclick="addToCart()" class="btn btn-primary">Add to cart</a>
+                                    <a onclick="addToCart() && addToCart1()" class="btn btn-primary">Add to cart</a>
                                    
                                     <a onclick="hideCard()" class="btn btn-primary">Skip</a>
                                 </div>
@@ -44,4 +44,12 @@ function hideCard() {
     targetCard.style.backgroundColor = "green";
   }
 
+  const addToCart1 = function() {
+    let bookName = document.querySelector("result.forEach(elem.title)") //i dont know how to select spesific card ????
+    let addedBookList = document.querySelector("#books-added")
+    let newBook = document.createElement("li")
+    newBook.innerHTML = bookName.value   //here I have to identify the Title of the current book, which should be equal to book value ????
+    addedBookList.appendChild(newBook)
+    bookName.value = ""
+}
   
