@@ -20,7 +20,7 @@ function books (){
                                     <p class="card-text">Price $:
                                     ${elem.price}
                                     </p>
-                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                    <a onclick="addToCart()" class="btn btn-primary">Add to cart</a>
                                    
                                     <a onclick="hideCard()" class="btn btn-primary">Skip</a>
                                 </div>
@@ -37,3 +37,11 @@ function hideCard() {
       event.currentTarget.parentNode.parentNode;
     targetCard.style.display = "none";
   }
+
+  function addToCart() {
+    const targetCard =
+      event.currentTarget.parentNode;
+    targetCard.style.backgroundColor = "green";
+  }
+
+  
